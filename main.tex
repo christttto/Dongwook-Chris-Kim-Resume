@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%https://v2.overleaf.com/project/5b8f91f9ad497c1d49e74768
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Chris}{Kim}{ \urlstyle{same}\url{https://christttto.github.io} \\
+\href{mailto:dongwookchriskim@berkeley.edu}{dongwookchriskim@berkeley.edu} | 510.610.9227
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{UC Berkeley}
+\descript{BA in Cognitive Science}
+\descript{Minors in}
+\descript{Computer Science, Music}
+\location{Dec 2018 | Berkeley, CA}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/christttto}{\custombold{christttto}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/dongwookchriskim/}{\custombold{dongwookchriskim}} \\
+500px://  \href{https://500px.com/kimkhri}{\custombold{kimkhri}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{\custombold{Advanced}}%bold this
+C\# \textbullet{}   Java \textbullet{} Python \\
+Javascript \textbullet{} HTML \textbullet{}   CSS \\
+\location{\custombold{Proficient}}
+C \textbullet{} C++ \textbullet{} Ojective C \\
+PHP \textbullet{} MySQL  \\
+\sectionsep
+\subsection{Software}
+\location{\custombold{Advanced}}%bold this
+Photoshop \textbullet{} Lightroom\\
+Illustrator\\
+\location{\custombold{Proficient}}
+Latex \textbullet{} InDesign\\
+XD \textbullet{} Premiere\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Computer Science}
+User Experience and User Interface\\
+Database Architecture\\
+Introduction to Artificial Intelligence\\
+IOS: Swift Development\\
+Machine Structure\\
+Data Structure\\
+Discrete Mathematics\\
+\sectionsep
+
+\subsection{Cognitive Science}
+Basic Issues in Cognition\\
+Linguistic Science\\
+Ancient Philosophy\\
+Cultural Psychology\\
+Evolution of Human Brain\\
+Music Perception and Cognition\\
+\sectionsep
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Nepes: Future Intelligence} \descript{|}
+\descript{Software Engineer Intern}
+\location{August 2017 – Dec 2017 | Seoul, Korea}
+\vspace{\topsep}
+\begin{tightemize}
+\item Build debugging software for Cypress FPGA board based processor in C\# 
+\item Develop test cases for Neuroshield: AI processor based on Radial Basis Function in C++
+\item Product design and field research for Neuroshield with over 30 ideations
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Republic of Korea Air Force} \descript{|}
+\descript{Information System Management, staff Sergeant}
+\location{August 2015 - August 2017 | Wonju, Korea}%alignment ugly
+\begin{tightemize}
+\item Front-end management of web portal used within intranet
+\item Administer information systems within intranet (Linux, Windows server based)
+\item Manage transfer of classified documents between different divisions with signal de-encryption (Level II Clearance)
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Educational Technology Services} \descript{|}
+\descript{Knowledge Management Consultant}
+\location{January 2013 - December 2018 | Berkeley, CA}
+\begin{tightemize}
+\item Facilitate computer labs in Berkeley and troubleshoot user issues in lab
+\item Log troubleshooting cases and feedback to create ticket database on JIRA
+\item Create banners and illustrations for event organizations and facilities
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\runsubsection{Maroon: The Packet Tracer (Professional)} \descript{}
+\descript{C\# \textbullet{} .NET Framework \textbullet{} Cypress Api}
+
+\begin{tightemize}
+\item Built in C\# with .NET Framework and Cypress API
+\item Parsed user activity into 16 bit protocol 
+\item Processed RBF classifications and image outputs for debugging
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Life as Someone Else (Academic)} \descript{}
+\descript{HTML \textbullet{} CSS \textbullet{} Javascript \textbullet{} Django \textbullet{} Ajax \textbullet{} InDesign}
+\begin{tightemize}
+\item Built journaling webapp to connect working professionals and high school students
+\item Utilized Django to create framework for account and post management
+\item Used Javascript to develop foreign key matching feature to protect user personal information
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabular}{rll}
+\custombold{Tic-Toc the Metronome} & Metronome application for IOS 7\\
+\custombold{Map Reduce Project}  & EC2 Hadoop Map and Reduce\\
+\custombold{Image Processing}    & Multi-threading, processing optimization\\
+\custombold{MIPS Processor Design} & Implementing processor in Logism, simulator in C\\
+\custombold{Multi-Agent Pacman} & Pacman algorithm with expectimax, reinforcement\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXTRACURRICULAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{resume}
